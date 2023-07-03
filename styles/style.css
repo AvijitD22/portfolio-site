@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+
+html{
+    scroll-behavior: smooth;;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to bottom right, #A4B2BF, #053768, #0B5089) !important;
+    color: #FFFFFF !important;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro > h1{
+    font-size: 5vw;
+}
+
+.heading{
+    font-size: 70px;
+    font-family: 'BioRhyme', serif;
+    text-align: center;
+}
+
+.about{
+    height: fit-content;
+    text-align: center;
+    padding: 10%;
+    font-family: 'BioRhyme', serif;
+}
+
+.about__info{
+    padding: 5%;
+}
+
+.skills{
+    height: fit-content;
+    padding: 10%;
+    text-align: center;
+}
+
+.skills_logo{
+    padding: 3%;
+}
+
+.skills_logo > img{
+    width: 100px;
+    margin: 2%;
+}
+
+.projects{
+    height: fit-content;
+    padding: 10%;
+    text-align: center;
+}
+
+.project__cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 5%;
+}
+
+.card-title{
+    text-decoration: underline;
+}
+
+.contact{
+    height: fit-content;
+    padding: 5%;
+    text-align: center;
+}
+
+.contact-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10%;
+    padding: 10%;
+}
+
+.contact-info{
+    font-family: 'BioRhyme', serif;
+}
+
+.contact-info > a{
+    text-decoration: none;
+    color: grey;
+}
+
+.contact-info > a:hover{
+    color: white;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #004d00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #002600;
+}
+
+.contact-form {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.blogs{
+    height: fit-content;
+    padding: 5%;
+    text-align: center;
+}
+
+.blogs__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer > hr{
+    width: 70vw;
+    margin: auto;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 20%;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    font-family: 'BioRhyme', serif;
+}
+
+.footer-info > a{
+    max-width: 150px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links >  a{
+    text-decoration: none;
+    color: grey;
+    margin: 3% 0;
+}
+
+.footer-links >  a:hover{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer-info,
+    .footer-links,
+    .contact-info{
+        width: 100vw;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+        margin: 50px 0;
+    }
+}
+
+footer > p{
+    text-align: center;
+    color: grey;
+}
